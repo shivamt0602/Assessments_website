@@ -1,0 +1,30 @@
+<section id="content-card">
+    <div class="content" id="contentId">
+      <div class="container text-center">
+        <div class="row">
+
+          <div class="col" *ngFor="let i of arrLanguages" style="margin-top: 50px;">
+            <div class="card" style="width: 20rem;">
+              <img [src]="i.photo" height="250px"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Learn {{i.language}}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-body">
+                <!-- <button type="button" class="btn btn-primary view-more-btn">
+                  <a href="assessments.html" class="card-link view-more-link">View More</a>
+                </button> -->
+                <button type="button" class="btn btn-primary" (click)="showdetails(i.language)">Primary</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
