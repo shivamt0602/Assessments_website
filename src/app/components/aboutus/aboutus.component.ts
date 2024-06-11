@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InstructorName } from '../../models/instructors';
 
 @Component({
   selector: 'app-aboutus',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './aboutus.component.scss'
 })
 export class AboutusComponent {
-
+  arrInstructors = [
+    new InstructorName("Miti Bhat"),
+    new InstructorName("Rajshekhar Bhat"),
+    new InstructorName("Abhijit Kshirsagar")
+  ]
 }

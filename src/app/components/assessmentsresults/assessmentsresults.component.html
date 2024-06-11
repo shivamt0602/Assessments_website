@@ -1,1 +1,259 @@
-<p>assessmentsresults works!</p>
+<section style="margin-top: 50px;">
+    <div class="content" id="contentId">
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Users</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Courses</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="category-tab" data-bs-toggle="tab" data-bs-target="#category-tab-pane" type="button" role="tab" aria-controls="category-tab-pane" aria-selected="false">Course Categories</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="quiz-tab" data-bs-toggle="tab" data-bs-target="#quiz-tab-pane" type="button" role="tab" aria-controls="quiz-tab-pane" aria-selected="false">Assessments</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="score-tab" data-bs-toggle="tab" data-bs-target="#score-tab-pane" type="button" role="tab" aria-controls="score-tab-pane" aria-selected="false">Assessment Scores</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="report-tab" data-bs-toggle="tab" data-bs-target="#report-tab-pane" type="button" role="tab" aria-controls="report-tab-pane" aria-selected="false">Report</button>
+          </li>
+        </ul>
+        
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">User</th>
+                  <th scope="col">Faculty</th>
+                  <th scope="col">Faculty Email</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>abcgmail.com</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>defyahoo.com</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="1">Larry the Bird</td>
+                  <td>Ross</td>
+                  <td>ghihotmail.com</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Courses</th>
+                  <th scope="col">status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Python</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Java</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Node.js</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>React</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>mongoDb</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+              </tbody>
+            </table>
+            
+
+          </div>
+          <div class="tab-pane fade" id="category-tab-pane" role="tabpanel" aria-labelledby="category-tab" tabindex="0">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col" colspan="2">Courses categories</th>
+                  <th scope="col">status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td colspan="2">Frontend</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td colspan="2">Backend</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Databases</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="tab-pane fade" id="quiz-tab-pane" role="tabpanel" aria-labelledby="quiz-tab" tabindex="0">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col" colspan="2">Assessment</th>
+                  <th scope="col">status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td colspan="2">python-basics</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td colspan="2">nodeJs-basics</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">mongoDb-basics</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td colspan="2">java-basics</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td colspan="2">react-basics</td>
+                  <td><button class="btn btn-primary" type="submit">CRUD</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="tab-pane fade" id="score-tab-pane" role="tabpanel" aria-labelledby="score-tab" tabindex="0">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col" colspan="2">Assessment topics</th>
+                  <th scope="col" colspan="2">Assessment scores</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td colspan="2">python-basics</td>
+                  <td>10/10</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td colspan="2">nodeJs-basics</td>
+                  <td>10/10</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">mongoDb-basics</td>
+                  <td>10/10</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td colspan="2">java-basics</td>
+                  <td>10/10</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td colspan="2">React-basics</td>
+                  <td>10/10</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="tab-pane fade" id="report-tab-pane" role="tabpanel" aria-labelledby="report-tab" tabindex="0">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col" colspan="2">Assessment topics</th>
+                  <th scope="col" colspan="2">Assessment Report</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td colspan="2">python-basics</td>
+                  <td>Good</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td colspan="2">nodeJs-basics</td>
+                  <td>Good</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">mongoDb-basics</td>
+                  <td>Good</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td colspan="2">java-basics</td>
+                  <td>Good</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td colspan="2">React-basics</td>
+                  <td>Good</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+
+    </div>
+  </section>

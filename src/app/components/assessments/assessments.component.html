@@ -1,7 +1,13 @@
-<div class="card" style="width: 18rem;" *ngFor="let i of arrCourses">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{i.assessmentName}}</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-    </ul>
+<div class="container text-center">
+  <div class="row">
+    <div class="col"  *ngFor="let i of arrCourses">
+      <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{i.assessmentName}}</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+    </div>
   </div>
+</div>
