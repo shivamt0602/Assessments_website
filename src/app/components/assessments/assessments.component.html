@@ -45,6 +45,10 @@
 <div class="box1" [ngClass]="{bordered : true}">
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ipsum?
 </div>
-<div class="box2" [ngClass]="{bordered:false}">
+<div class="box2" [ngClass]="classObj">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur exercitationem autem rem dignissimos dolore est ipsum ipsa laboriosam quidem!
 </div>
+<div class="box3">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, eaque.
+</div>
+<button (click)="toggleBorder()">Toggle Button</button>

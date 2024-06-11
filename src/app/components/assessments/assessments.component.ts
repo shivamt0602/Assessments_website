@@ -29,6 +29,41 @@ export class AssessmentsComponent {
   //     this.choice = 1;
   //   }
   // }
-  
+
+  classObj={
+    bordered:false
+  };
+
+
+  isBordered : boolean = false
+
+  // isBordered : boolean = this.classObj.bordered;
+
+  constructor(){
+    this.isBordered = true;
+    // this.classList = ['blue','round'];
+    this.toggleBorder = function(){
+      this.isBordered = !this.isBordered;
+      this.classObj = {
+        bordered : this.isBordered
+      }
+    };
+  }
+
+  // classList : string[]
+
+  // toggleBorder():void{
+    
+  //   this.isBordered = !this.isBordered;
+
+  //   this.classObj = {
+  //     bordered : this.isBordered
+  //   }
+
+  // };
+
+  toggleBorder():void{}
+
+
   
 }
