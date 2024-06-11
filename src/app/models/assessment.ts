@@ -1,7 +1,9 @@
 export class Assessment{
     assessmentName : string
-    constructor(aName:string){
+    flag : boolean
+    constructor(aName:string,answer:boolean){
         this.assessmentName = aName
+        this.flag = answer
     }
 
 }
