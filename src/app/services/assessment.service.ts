@@ -14,30 +14,34 @@ export class AssessmentService {
   //   new Language("Java","Assets/images/java.png"),
   //   new Language("Python","Assets/images/python.png"),
   //   new Language("NodeJs","Assets/images/nodeJs.png")
-  // ]
+  //]
 
   constructor() { 
+
     this.arrLanguages = [
-      new Language("Java","Assets/images/java.png"),
-      new Language("Python","Assets/images/python.png"),
-      new Language("NodeJs","Assets/images/nodeJs.png")
+      new Language("Java","Assets/images/java.png",1),
+      new Language("Python","Assets/images/python.png",2),
+      new Language("NodeJs","Assets/images/nodeJs.png",3)
     ]
+
   }
 
   getAssessments(){
     return this.arrLanguages;
   }
 
-  // getAssessmentByName(name:string){
+  getAssessmentById(id:number){
 
-  //   for(let i=0;i<this.arrLanguages.length;i++){
-  //     if(name == this.arrLanguages[i].language){
-  //       return this.arrLanguages[i]
-  //     }
-  //   }
+    for(var i=0;i<this.arrLanguages.length;i++){
 
+      if(id == this.arrLanguages[i].id){
+        return this.arrLanguages[i]
+      }
+    }
 
-  // }
+    return new Language("",'',0) // just for return sake(which is an object)
+
+  }
   
 
 }

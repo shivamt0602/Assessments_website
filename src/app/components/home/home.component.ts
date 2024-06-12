@@ -32,15 +32,23 @@ export class HomeComponent {
   //   new Language("NodeJs","Assets/images/nodeJs.png")
   // ]
 
+
   arrLanguages : Language[] = []
 
-  showdetails(aName:string){
-    console.log("details here..."+aName)
+  showdetails(id:number){
+    console.log("details here..."+id)
+    console.log(this.assessmentService.getAssessmentById(id))
   }
 
   constructor(private assessmentService:AssessmentService){
     this.arrLanguages = this.assessmentService.getAssessments()
   }
+
+  // displayDetails(aid : number){
+  //   console.log(aid)
+  //   this.assessment = this.assessmentService.getAssessmentById(aid)
+  //   console.log(this.assessment)
+  // }
 
 
 }

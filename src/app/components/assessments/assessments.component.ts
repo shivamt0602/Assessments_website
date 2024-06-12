@@ -11,9 +11,9 @@ import { Assessment } from '../../models/assessment';
 export class AssessmentsComponent {
 
   arrCourses = [
-    new Assessment("asgn1", true),
-    new Assessment("asgn2", true),
-    new Assessment("asgn3", false)
+    new Assessment("asgn1", true,1),
+    new Assessment("asgn2", true,2),
+    new Assessment("asgn3", false,3)
   ];
 
   // choice: number = 0; 
