@@ -1,16 +1,18 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">
+            <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="20" alt="MDB Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" [routerLink]="['/house']">Home</a>
+                <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/aboutus']">About Us</a>
@@ -25,18 +27,169 @@
                 <a class="nav-link" [routerLink]="['/contactus']">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin:5px;">
+                  Login
+                </button>
               </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_register" style="margin:5px;">
+                  Register
+                </button>
+              </li>
+            </ul> <!-- Closing the ul tag -->
+          </div> <!-- Closing the collapse div -->
+        </div> <!-- Closing the inner container-fluid div -->
+      </nav> <!-- Closing the nav tag -->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Login Here</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" id="loginForm" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="loginUsername" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="loginPassword" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
-      </nav>
-    </div>
-  </div>
+      </div>
+      
+      <!-- Register Modal -->
+      <div class="modal fade" id="exampleModal_register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Register Here</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" id="registerForm" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="registerFirstName" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="registerLastName" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">at the rate sybmol here</span>
+                    <input type="text" class="form-control" id="registerUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="registerPassword" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Date</label>
+                  <div class="input-group has-validation">
+                    <!-- Set the min attribute to today's date -->
+                    <input type="date" class="form-control" id="registerDate" aria-describedby="inputGroupPrepend" min="" required>
+                    <div class="invalid-feedback">
+                      Please choose a date not after today.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="registerCity" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="registerState" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="registerZip" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!-- Closing the first col div -->
+  </div> <!-- Closing the first row div -->
   <div class="row">
     <div class="col">
       <app-content></app-content>
@@ -47,4 +200,4 @@
       <app-footer></app-footer>
     </div>
   </div>
-</div>
+</div> <!-- Closing the outer container-fluid div -->

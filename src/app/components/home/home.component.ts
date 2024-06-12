@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Assessment } from '../../models/assessment';
 import { User } from '../../models/user';
 import { Language } from '../../models/language';
+import { AssessmentService } from '../../services/assessment.service';
 
 @Component({
   selector: 'app-home',
@@ -25,14 +26,20 @@ export class HomeComponent {
     new User(1,"Rashmi",100)
   ]
 
-  arrLanguages = [
-    new Language("Java","Assets/images/java.png"),
-    new Language("Python","Assets/images/python.png"),
-    new Language("NodeJs","Assets/images/nodeJs.png")
-  ]
+  // arrLanguages = [
+  //   new Language("Java","Assets/images/java.png"),
+  //   new Language("Python","Assets/images/python.png"),
+  //   new Language("NodeJs","Assets/images/nodeJs.png")
+  // ]
+
+  arrLanguages : Language[] = []
 
   showdetails(aName:string){
     console.log("details here..."+aName)
+  }
+
+  constructor(private assessmentService:AssessmentService){
+    this.arrLanguages = this.assessmentService.getAssessments()
   }
 
 

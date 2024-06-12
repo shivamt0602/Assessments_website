@@ -10,7 +10,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 
 const routes: Routes = [
   {path:"aboutus",component:AboutusComponent},
-  {path:"house",component:HomeComponent},
+  {path:"",component:HomeComponent},
   {path:"assessment",component:AssessmentsComponent},
   {path:"result",component:AssessmentsresultsComponent},
   {path:"report",component:ReportComponent},
