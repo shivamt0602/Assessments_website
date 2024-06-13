@@ -10,10 +10,12 @@ import { Assessment } from '../../models/assessment';
 
 export class AssessmentsComponent {
 
+  // arrCourses : Assessment[]=[]
+
   arrCourses = [
-    new Assessment("asgn1", true,1),
-    new Assessment("asgn2", true,2),
-    new Assessment("asgn3", false,3)
+    new Assessment("asgn1", true,1,10,"date","time",10),
+    new Assessment("asgn2", true,2,10,"date","time",10),
+    new Assessment("asgn3", false,3,10,"date","time",10),
   ];
 
   // choice: number = 0; 
