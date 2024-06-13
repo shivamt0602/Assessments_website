@@ -8,9 +8,9 @@ export class Assessment{
     assesmentDate : string
     assessmentTime : string
     facultyid : number 
-    questions : Question[]
+    // questions : Question[]
 
-    constructor(aName:string,answer:boolean,idno:number,asno:number,asdate:string,astime:string,facid:number,query : Question[]){
+    constructor(aName:string,answer:boolean,idno:number,asno:number,asdate:string,astime:string,facid:number){
         this.assessmentName = aName
         this.flag = answer
         this.id = idno
@@ -18,7 +18,7 @@ export class Assessment{
         this.assesmentDate = asdate
         this.assessmentTime = astime
         this.facultyid = facid
-        this.questions = query
+        // this.questions = query
     }
 
 }

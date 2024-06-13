@@ -11,6 +11,7 @@ import { AssessmentsComponent } from './components/assessments/assessments.compo
 import { AssessmentsresultsComponent } from './components/assessmentsresults/assessmentsresults.component';
 import { ReportComponent } from './components/report/report.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { ContactusComponent } from './components/contactus/contactus.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
