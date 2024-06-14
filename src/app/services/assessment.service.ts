@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Language } from '../models/language';
 
 
-@Injectable({
+@Injectable({ // @ makes it dependency injectable
   providedIn: 'root'
 })
 

@@ -8,19 +8,27 @@ import { Users } from '../../models/users';
   styleUrls: ['./assessmentsresults.component.scss']
 })
 export class AssessmentsresultsComponent {
-  
+
   userForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
     this.userForm = this.fb.group({
-      firstName: [''],
-      lastName: [''],
-      email: [''],
-      mobile: [''],
-      password: [''],
-      dob: [''],
-      role: [''],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      dob: ['', Validators.required],
+      role: ['', Validators.required],
     });
+  }
+
+  isInvalid(controlName: string): boolean {
+    const control = this.userForm.get(controlName);
+    if (control) {
+      return control.invalid && (control.dirty || control.touched);
+    }
+    return false;
   }
 
   onSubmit() {
